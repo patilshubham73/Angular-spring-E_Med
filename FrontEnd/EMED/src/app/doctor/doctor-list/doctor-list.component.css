@@ -1,0 +1,38 @@
+.doctors{
+    border: #ccc solid 9px;
+    box-shadow: 0 0 5px 1px #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+    height: 200px;
+    /* cursor: pointer; */
+  }
+  
+  h5 {
+    cursor: pointer;
+  }
+  
+  .doctors img {
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .btn-book-to-appointment {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+
+  .center {
+    margin: auto;
+    width: 60%;
+    padding: 60px;
+
+  }
+
+
+  button:focus {
+    outline: blue auto 6px; 
+}

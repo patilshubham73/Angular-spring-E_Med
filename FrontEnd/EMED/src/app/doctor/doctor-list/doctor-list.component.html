@@ -1,0 +1,48 @@
+<div class="center">
+
+  <h3 class="center">Doctors</h3>
+
+  <div class="row">
+  
+    <!-- filter section -->
+    <div class="col-md-5">
+      <div class="form">
+        <!-- <div class="form-group">
+          <label for="">Specialization</label>
+          <select (change)="filterDoctors()" [(ngModel)]="specialities" class="form-control">
+            <option value="0">All</option>
+            <option [value]="specialization.id" *ngFor="let specialization of specialities">{{specialization.title}}</option>
+          </select>
+        </div> -->
+       
+  
+    <div class="col-md-2"></div>
+  
+    <!-- product section -->
+    <div class="col-md-5">
+      <!-- <h4 *ngIf="doctor.length == 0">There are no doctors matching this criteria</h4>
+      <div  *ngIf="doctors.length > 0" class="row"> -->
+        <div class="col-md-8 doctors" *ngFor="let doctor of doctors | async">
+          
+            <!-- <h5 (click)="showDoctorDetails(doctor)">{{doctor.title}}</h5>
+            <div class="description">{{doctor.description}}</div> -->
+    
+            <div class="days"><strong>Name: </strong> {{doctor.name}}</div>
+            <div class="address"><strong>Address: </strong> {{doctor.address}}</div>
+            <div class="days"><strong>Mobile: </strong> {{doctor.mobile}}</div>
+            <div class="fees"><strong>Fees: </strong> {{doctor.fees}}</div>
+            <div class="eduacation"><strong>Eduacation: </strong> {{doctor.education}}</div>
+            <div class="time"><strong>specialization: </strong> {{doctor.specialities}}</div>
+          
+          
+            <button (click)="onBookAppointment(doctor)"   class="btn btn-sm btn-info btn-book-to-appointment">Book Appointment</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
